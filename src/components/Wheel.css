@@ -1,0 +1,49 @@
+/* Wheel.css */
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    position: relative
+}
+
+.wheel {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 5s ease-out;
+    --spinDegree: 0;
+}
+
+button {
+    margin-top: 30px;
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    /* Màu nền cho nút */
+    color: white;
+    /* Màu chữ */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.spin-button:hover {
+    background-color: #45a049;
+}
+
+.spinning {
+    transform: rotate(3600deg);
+    /* Quay nhiều vòng và từ từ dừng lại */
+}
+
+/* .wheel.spinning {
+    animation: spinAnimation 5s ease-out forwards;
+} */
